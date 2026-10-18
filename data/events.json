@@ -1,0 +1,46 @@
+{
+  "updated": "2026-10-18",
+  "dueDate": { "month": "2027-02", "date": null, "note": "정확한 날짜 미정" },
+  "events": [
+    {
+      "id": "okinawa",
+      "title": "오키나와 태교여행",
+      "start": "2026-10-30",
+      "end": "2026-11-02",
+      "type": "trip",
+      "note": "중북부 2박 + 남부 1박"
+    },
+    {
+      "id": "befe-2026-11",
+      "title": "베페 베이비페어",
+      "start": "2026-11-12",
+      "end": "2026-11-15",
+      "type": "shopping",
+      "place": "마곡 코엑스",
+      "note": "카시트·유모차 가격 비교 · 사전등록 시 보통 무료입장"
+    },
+    {
+      "id": "yugyojeon-2026-11",
+      "title": "유교전 & 글로벌 베이비페어",
+      "start": "2026-11-19",
+      "end": "2026-11-22",
+      "type": "shopping",
+      "place": "삼성 코엑스"
+    },
+    {
+      "id": "birth",
+      "title": "또병이 태어나는 날",
+      "start": "2027-02",
+      "type": "birth",
+      "tentative": true,
+      "note": "정확한 예정일이 정해지면 날짜 입력"
+    }
+  ],
+  "todos": [
+    { "id": "t1", "title": "백화점에서 카시트·유모차 시착 (GLB 타고 가서 장착·적재 테스트)", "due": "2026-10-29", "done": false, "link": "gear:carseat" },
+    { "id": "t2", "title": "베페·유교전 사전등록", "due": "2026-11-11", "done": false },
+    { "id": "t3", "title": "바구니 카시트 쓸지 정하기 (1안 / 2안)", "due": "2026-11-11", "done": false, "link": "gear:carseat" },
+    { "id": "t4", "title": "테슬라 전시장에서 모델Y 뒷좌석 카시트 장착 확인", "due": null, "done": false },
+    { "id": "t5", "title": "정밀초음파 날짜 앱에 입력", "due": null, "done": false }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "updated": "2026-10-18",
+  "active": false,
+  "intro": "또병이가 태어나면 채워갈 공간이에요. 출생신고 후 하나씩 정리합니다.",
+  "sections": [
+    { "id": "accounts", "title": "또병이 통장", "items": [] },
+    { "id": "benefits", "title": "출산·육아 지원금", "items": [] },
+    { "id": "insurance", "title": "보험", "items": [ { "name": "태아보험", "value": "현대해상 가입 완료" } ] },
+    { "id": "savings", "title": "저축·투자 계획", "items": [] }
+  ]
+}

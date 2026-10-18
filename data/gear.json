@@ -1,0 +1,71 @@
+{
+  "updated": "2026-10-18",
+  "statuses": ["조사 전", "조사 중", "조사 완료", "매장 확인", "구매 완료"],
+  "items": [
+    {
+      "id": "carseat",
+      "category": "이동",
+      "name": "카시트",
+      "status": "조사 완료",
+      "when": "출산 전",
+      "pick": "싸이벡스 클라우드 T + 제로나 T",
+      "onlinePrice": 1560000,
+      "storePrice": null,
+      "storeNote": "",
+      "note": "퇴원 날 필요 · 1안(바구니 사용) 기준",
+      "detail": {
+        "summary": "1안은 싸이벡스 클라우드 T(바구니) + 제로나 T(회전형)를 베이스 T 하나로 같이 쓰는 조합. 바구니를 안 쓰면 2안 브라이텍스 듀얼픽스 프로 하나로.",
+        "options": [
+          { "name": "1안 · 싸이벡스 클라우드 T + 제로나 T 세트", "price": "약 156만 원", "pros": "바구니가 드래곤플라이에 바로 결합, 베이스만 옮기면 모델Y에도 장착", "cons": "가장 비쌈, 제로나 T 15kg" },
+          { "name": "2안 · 브라이텍스 듀얼픽스 프로", "price": "약 95만 원", "pros": "벤츠 순정 카시트 계열이라 GLB 궁합 검증, 13.7kg로 가벼운 편, 회전 부드러움", "cons": "깊이 74cm로 앞좌석 공간 확인 필요" },
+          { "name": "싸이벡스 제로나 Ti (최신형)", "price": "약 107만 원", "pros": "ADAC 2026년 5월 유아 부문 공동 1위(2.5), 측면충돌 매우 우수", "cons": "13.5kg, 무겁다는 평" },
+          { "name": "조이 아이스핀360", "price": "62만~65만 원", "pros": "ADAC 2019 1위, 프리미엄 대비 30만 원 이상 저렴", "cons": "테스트 결과가 오래됨" },
+          { "name": "맥시코시 미카 프로 에코 360", "price": "75만~103만 원", "pros": "i-Size·ADAC 인증, 안전성 점수 높음", "cons": "비싸고 무겁고 김" },
+          { "name": "다이치 원픽스360 시즌2", "price": "61만~64만 원", "pros": "국내 인기 2위, 국내 AS 편함", "cons": "ADAC 테스트 없음" }
+        ],
+        "checks": ["GLB 뒷좌석에 뒤보기로 장착 (앞좌석 간섭·서포트레그)", "모델Y에서도 장착 확인", "정식 수입품(KC 인증·AS) 확인"],
+        "doc": "https://claude.ai/code/artifact/3c819dc3-90e8-4afc-8b32-b8d461a36c2d"
+      }
+    },
+    {
+      "id": "stroller",
+      "category": "이동",
+      "name": "유모차",
+      "status": "조사 완료",
+      "when": "출산 전",
+      "pick": "부가부 드래곤플라이 플러스",
+      "onlinePrice": 1725000,
+      "storePrice": null,
+      "storeNote": "",
+      "note": "카시트 어댑터 포함 여부 확인",
+      "detail": {
+        "summary": "차로 다니는 생활에 가장 균형 잡힌 선택. 시트·배시넷 단 채로 한 손으로 세워 접히고, 싸이벡스 클라우드 T 바구니와 어댑터로 결합.",
+        "options": [
+          { "name": "부가부 드래곤플라이 플러스 (2026.7 출시)", "price": "172.5만 원", "pros": "시트·하네스·캐노피·수납 개선", "cons": "기본형보다 12.5만 원 비쌈" },
+          { "name": "부가부 드래곤플라이 기본형", "price": "160만 원", "pros": "접은 크기 36×52×90cm, 7.9kg, 하단 바구니 10kg", "cons": "조립에 시간 걸린다는 평, 배시넷 9kg까지" }
+        ],
+        "checks": ["GLB 트렁크에 접어서 넣어보기", "배시넷 단 상태로 밀어보기", "카시트 어댑터가 국내 구성품에 포함인지"],
+        "doc": "https://claude.ai/code/artifact/3c819dc3-90e8-4afc-8b32-b8d461a36c2d"
+      }
+    },
+    { "id": "carrier", "category": "이동", "name": "아기띠·힙시트", "status": "조사 전", "when": "출산 후" },
+    { "id": "crib", "category": "수면", "name": "아기침대", "status": "조사 전", "when": "출산 전" },
+    { "id": "bedding", "category": "수면", "name": "매트리스·침구", "status": "조사 전", "when": "출산 전" },
+    { "id": "swaddle", "category": "수면", "name": "속싸개·스와들", "status": "조사 전", "when": "출산 전" },
+    { "id": "clothes", "category": "의류", "name": "배냇저고리·내의", "status": "조사 전", "when": "출산 전" },
+    { "id": "outerwrap", "category": "의류", "name": "겉싸개", "status": "조사 전", "when": "출산 전", "note": "퇴원용" },
+    { "id": "bottle", "category": "수유", "name": "젖병", "status": "조사 전", "when": "출산 전" },
+    { "id": "sterilizer", "category": "수유", "name": "젖병소독기", "status": "조사 전", "when": "출산 전" },
+    { "id": "formula-pot", "category": "수유", "name": "분유포트", "status": "조사 전", "when": "출산 전" },
+    { "id": "pump", "category": "수유", "name": "유축기", "status": "조사 전", "when": "출산 전" },
+    { "id": "nursing-pillow", "category": "수유", "name": "수유쿠션", "status": "조사 전", "when": "출산 전" },
+    { "id": "diaper", "category": "위생", "name": "기저귀", "status": "조사 전", "when": "출산 전" },
+    { "id": "wipes", "category": "위생", "name": "물티슈", "status": "조사 전", "when": "출산 전" },
+    { "id": "tub", "category": "위생", "name": "아기욕조", "status": "조사 전", "when": "출산 전" },
+    { "id": "nail", "category": "위생", "name": "손톱가위·위생용품", "status": "조사 전", "when": "출산 전" },
+    { "id": "thermometer", "category": "건강", "name": "체온계", "status": "조사 전", "when": "출산 전" },
+    { "id": "humidifier", "category": "건강", "name": "가습기", "status": "조사 전", "when": "출산 전" },
+    { "id": "bouncer", "category": "생활", "name": "바운서", "status": "조사 전", "when": "출산 후" },
+    { "id": "monitor", "category": "생활", "name": "아기 모니터(홈캠)", "status": "조사 전", "when": "출산 후" }
+  ]
+}
