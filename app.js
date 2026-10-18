@@ -89,7 +89,7 @@ function renderGate(msg = '', presetCode = '') {
       <h2>가족 코드를 입력해 주세요</h2>
       <p class="muted">같은 코드를 입력한 기기끼리 일정과 준비물을 함께 봐요. 한 번 입력하면 이 기기에 기억돼요.</p>
       <label class="field"><span>가족 코드</span>
-        <input name="code" value="${esc(presetCode)}" placeholder="예: ttob-xxxx-xxxx-xxxx" autocapitalize="off" autocorrect="off" spellcheck="false" required></label>
+        <input name="code" value="${esc(presetCode)}" placeholder="예: 0204" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false" required></label>
       <p class="form-msg" role="alert">${esc(msg)}</p>
       <button class="btn" type="submit">들어가기</button>
     </form>`;
@@ -112,7 +112,7 @@ function renderGateCreate(code) {
 async function submitGate(form) {
   const code = normalizeCode(form.code.value);
   const btn = form.querySelector('button[type=submit]');
-  if (code.length < 16) return renderGate('코드는 16자 이상이어야 해요.', code);
+  if (code.length < 4) return renderGate('코드는 4자 이상이어야 해요.', code);
   btn.disabled = true; btn.textContent = '확인 중…';
   let exists;
   try { exists = await db.familyExists(code); }
@@ -682,5 +682,5 @@ if ('serviceWorker' in navigator) {
   state.month = new Date(t.getFullYear(), t.getMonth(), 1);
   state.selected = iso(t);
   const code = normalizeCode(store.get(CODE_KEY));
-  if (code.length >= 16) enter(code); else renderGate();
+  if (code.length >= 4) enter(code); else renderGate();
 })();

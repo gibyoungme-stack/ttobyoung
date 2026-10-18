@@ -7,7 +7,7 @@
 - 데이터는 저장소가 아니라 Firestore `families/{가족코드}/` 아래에 있음
   - `meta/settings` (`createdAt`, `lastBackupAt`), `meta/finance`
   - `events/{id}`, `todos/{id}`, `gear/{id}`
-- `firestore.rules`: 가족 코드(16자 이상)를 아는 기기만 읽기·쓰기. 바꾸면 Firebase 콘솔 → Firestore → 규칙에 붙여넣고 게시해야 반영됨
+- `firestore.rules`: 가족 코드(4자 이상)를 아는 기기만 읽기·쓰기. 바꾸면 Firebase 콘솔 → Firestore → 규칙에 붙여넣고 게시해야 반영됨
 - **가족 코드는 저장소·커밋·이 파일에 절대 쓰지 않음** (코드가 유일한 잠금장치)
 
 ## 앱에서 직접 하는 것
