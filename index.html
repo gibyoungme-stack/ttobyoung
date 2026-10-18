@@ -15,16 +15,22 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="gated">
   <header class="top">
     <div class="top-inner">
-      <h1 id="page-title">또병이</h1>
-      <p id="page-sub" class="sub"></p>
+      <div>
+        <h1 id="page-title">또병이</h1>
+        <p id="page-sub" class="sub"></p>
+      </div>
+      <button id="settings-btn" class="icon-btn big" aria-label="설정">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      </button>
     </div>
   </header>
 
   <main>
-    <section id="view-calendar" class="view" aria-label="달력"></section>
+    <section id="view-gate" class="view" aria-label="가족 코드"></section>
+    <section id="view-calendar" class="view" aria-label="일정" hidden></section>
     <section id="view-gear" class="view" aria-label="준비물" hidden></section>
     <section id="view-finance" class="view" aria-label="경제" hidden></section>
   </main>
@@ -52,6 +58,9 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input id="file-input" type="file" accept="application/json,.json" hidden>
+
+  <script type="module" src="app.js"></script>
 </body>
 </html>
