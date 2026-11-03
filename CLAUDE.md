@@ -30,9 +30,9 @@
 }
 ```
 - 같은 id는 **필드 단위로 병합**(merge), 새 id는 추가. 보낸 필드만 바뀌고 앱에서 입력한 `storePrice`·`storeNote` 등은 유지됨
-- 기존 준비물 id: carseat stroller carrier crib bedding swaddle clothes outerwrap bottle sterilizer formula-pot pump nursing-pillow diaper wipes tub nail thermometer humidifier bouncer monitor
+- 준비물 id 목록은 2026-11-03 출산 준비 리스트 반영 업데이트 파일 기준 (베이비하우스 체크리스트에서 X 품목은 제외, 이름 적힌 품목은 `선물`)
 - 새 준비물은 `category`(이동/수면/의류/수유/위생/건강/생활), `name`, `when`(출산 전/후), `order`(정렬, 기존 0~20) 포함
-- `status`: 조사 전 → 조사 중 → 조사 완료 → 매장 확인 → 구매 완료
+- `status`: 조사 전 → 조사 중 → 조사 완료 → 매장 확인 → 구매 완료, 또는 `선물`(누가 사주기로 함, `note`에 이름)
 - 일정 `type`: birth hospital anniv trip shopping etc. `start`가 `YYYY-MM`이면 월만 표시
 - 사용자가 앱에서 이미 고쳤을 수 있으니, 바꿀 필요 없는 필드는 보내지 않기
 - 파일명 예: `ttobyoung-update-2026-11-01-bottle.json`

@@ -9,7 +9,7 @@ const TYPES = {
   etc:      { label: '기타',   cls: 'etc' },
   todo:     { label: '할 일',  cls: 'todo' },
 };
-const STATUSES = ['조사 전', '조사 중', '조사 완료', '매장 확인', '구매 완료'];
+const STATUSES = ['조사 전', '조사 중', '조사 완료', '매장 확인', '구매 완료', '선물'];
 const DOW = ['일', '월', '화', '수', '목', '금', '토'];
 const CODE_KEY = 'ttobyoung.familyCode';
 const VIEWS = {
@@ -376,8 +376,8 @@ function renderGear() {
   if (!state.loaded.has('gear')) { $('#view-gear').innerHTML = loading; return; }
   const items = sortedGear();
   const idx = (s) => Math.max(0, STATUSES.indexOf(s));
-  const researched = items.filter((i) => idx(i.status) >= 2).length;
-  const bought = items.filter((i) => idx(i.status) === 4).length;
+  const researched = items.filter((i) => idx(i.status) >= 2 && idx(i.status) <= 4).length;
+  const bought = items.filter((i) => idx(i.status) >= 4).length;
   const total = items.reduce((sum, i) => sum + (Number(i.storePrice ?? i.onlinePrice) || 0), 0);
   $('#page-sub').textContent = `${items.length}개 품목`;
   if (!items.length) {
@@ -396,7 +396,7 @@ function renderGear() {
   $('#view-gear').innerHTML = `
     <div class="stats">
       <div class="stat"><b>${researched}<small>/${items.length}</small></b><span>조사 완료</span></div>
-      <div class="stat"><b>${bought}</b><span>구매 완료</span></div>
+      <div class="stat"><b>${bought}</b><span>구매·선물</span></div>
       <div class="stat"><b>${won(total) || '-'}</b><span>예상 금액</span></div>
     </div>
     <div class="progress" aria-hidden="true">${bar}</div>

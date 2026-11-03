@@ -1,6 +1,6 @@
 // 앱 화면은 최신 버전을 먼저 받고(오프라인이면 캐시), Firebase SDK는 캐시 우선.
 // 데이터 자체는 Firestore가 기기에 따로 저장해 두므로 여기서 다루지 않습니다.
-const CACHE = 'ttobyoung-v2';
+const CACHE = 'ttobyoung-v3';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'db.js', 'manifest.webmanifest', 'icons/icon.svg'];
 const SDK_HOST = 'www.gstatic.com';
 

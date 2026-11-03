@@ -152,7 +152,8 @@ main { max-width: 640px; margin: 0 auto; padding: 8px 16px 24px; }
 .s2 { background: var(--blue-soft); color: var(--blue); }
 .s3 { background: var(--accent-soft); color: var(--accent); }
 .s4 { background: var(--green-soft); color: var(--green); }
-.bar-s0 { background: var(--line); } .bar-s1 { background: var(--violet); } .bar-s2 { background: var(--blue); } .bar-s3 { background: var(--accent); } .bar-s4 { background: var(--green); }
+.s5 { background: var(--gold-soft); color: var(--gold); }
+.bar-s0 { background: var(--line); } .bar-s1 { background: var(--violet); } .bar-s2 { background: var(--blue); } .bar-s3 { background: var(--accent); } .bar-s4 { background: var(--green); } .bar-s5 { background: var(--gold); }
 .chev { width: 16px; height: 16px; flex: none; fill: none; stroke: var(--ink-3); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* finance */
